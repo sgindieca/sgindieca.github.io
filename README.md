@@ -1,1 +1,0 @@
-# sgindieca.github.io
