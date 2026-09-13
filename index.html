@@ -1,19 +1,17 @@
-<a href="intent://com.android.settings/#Intent;scheme=android-app;end" class="my-button">
-    Visit Website
-</a>
+<!DOCTYPE html>
+<html>
+<body>
 
-<style>
-    .my-button {
-        display: inline-block;
-        background: #007bff;
-        color: white;
-        padding: 12px 24px;
-        border-radius: 8px;
-        text-decoration: none;
-        font-family: Arial, sans-serif;
-    }
+<button onclick="openSettings()">
+    Open Android Settings
+</button>
 
-    .my-button:hover {
-        background: #0056b3;
-    }
-</style>
+<script>
+function openSettings() {
+    window.location.href =
+        "intent:#Intent;action=android.settings.SETTINGS;end";
+}
+</script>
+
+</body>
+</html>
